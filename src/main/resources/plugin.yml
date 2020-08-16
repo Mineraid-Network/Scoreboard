@@ -1,0 +1,22 @@
+name: Scoreboard
+version: 0.0.1
+api-version: 1.8
+author: HopperLev
+main: co.uk.hopperelec.lev.Scoreboard.Scoreboard
+depend: [PlaceholderAPI]
+
+commands:
+  sb:
+    description: Scoreboard commands prefix
+    usage: /<command>
+
+permissions:
+  Scoreboard.*:
+    description: Scoreboard permissions
+    children:
+      scoreboard.reload: true
+      scoreboard.toggle: true
+  scoreboard.reload:
+    description: Allows reloading of the scoreboard config
+  scoreboard.toggle:
+    description: Allows for scoreboard toggle
